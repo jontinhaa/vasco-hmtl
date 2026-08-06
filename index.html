@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vasco da Gama | Experiência Premium</title>
+    <!-- Fontes Premium -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700;800&display=swap" rel="stylesheet">
+    <!-- Link para o CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- NAV BAR PREMIUM -->
+    <header class="header">
+        <div class="header__brand">
+            <span class="header__logo">CRVG</span>
+        </div>
+        <nav class="header__nav">
+            <ul class="header__menu">
+                <li><a href="#historia" class="header__link">A História</a></li>
+                <li><a href="#legado" class="header__link">O Legado</a></li>
+                <li><a href="#idolos" class="header__link">Ídolos</a></li>
+                <li><a href="#socio" class="header__link">Seja Sócio</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- SEÇÃO 1: A HISTÓRIA -->
+        <section id="historia" class="history-section">
+            <div class="history-section__content">
+                <h1 class="title-main">A Resposta Histórica e a Cruz de Malta</h1>
+                <p class="text-body">O Club de Regatas Vasco da Gama transcende o esporte. Em 1924, o clube redigiu a "Resposta Histórica", recusando-se a banir seus jogadores negros e operários a mando da elite do futebol. Fomos nós que construímos São Januário com o suor da nossa torcida, erguendo o maior templo da democracia esportiva das Américas. Ser Vasco é ser resistência, pioneirismo e glória.</p>
+            </div>
+        </section>
+
+        <!-- SEÇÃO 2: O LEGADO (Camisa e Estádio) -->
+        <section id="legado" class="heritage-section">
+            <div class="heritage__grid">
+                
+                <!-- Monumento 1: Camisa -->
+                <article class="heritage-card">
+                    <div class="heritage-card__image">
+                        <!-- Imagem Oficial do Repositório -->
+                        <img src="https://raw.githubusercontent.com/jontinhaa/PROJETO-TESTE/cf99e8f684869ac8fad5ba8db7284b2cc25fc412/assets/Gemini_Generated_Image_s4999hs4999hs499.png" alt="Camisa do Vasco Premium" class="heritage-card__img">
+                    </div>
+                    <div class="heritage-card__content">
+                        <h2 class="heritage-card__title">A Cruz Sagrada</h2>
+                        <p class="heritage-card__text">Um símbolo de resistência forjado na história. Nossa camisa carrega o peso de pioneiros e a glória de um século de vitórias absolutas. A eterna Camisa Negra.</p>
+                    </div>
+                </article>
+
+                <!-- Monumento 2: São Januário -->
+                <article class="heritage-card">
+                    <div class="heritage-card__image">
+                        <img src="https://images.unsplash.com/photo-1577223625816-7546f13df25d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Estádio São Januário" class="heritage-card__img">
+                    </div>
+                    <div class="heritage-card__content">
+                        <h2 class="heritage-card__title">Templo Autêntico</h2>
+                        <p class="heritage-card__text">Erguido por nossas próprias mãos. São Januário não é apenas um estádio, é o maior monumento da democracia no esporte mundial. O verdadeiro Caldeirão.</p>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- SEÇÃO 3: ÍDOLOS (Injetados pelo JS) -->
+        <section id="idolos" class="idols-section">
+            <h2 class="title-section">Os Imortais da Colina</h2>
+            <div class="grid-container" id="idols-grid">
+                <!-- O JS vai injetar os cards aqui -->
+            </div>
+        </section>
+
+        <!-- SEÇÃO 4: FORMULÁRIO DE SÓCIO -->
+        <section id="socio" class="partner-section">
+            <h2 class="title-section">Assuma Seu Lugar na História</h2>
+            <form class="form" id="socio-form">
+                <div class="form__group">
+                    <label class="form__label" for="nome">Nome Completo</label>
+                    <input class="form__input" type="text" id="nome" required placeholder="Ex: Jhonatan Almeida">
+                </div>
+                <div class="form__group">
+                    <label class="form__label" for="email">E-mail</label>
+                    <input class="form__input" type="email" id="email" required placeholder="seuemail@exemplo.com">
+                </div>
+                <div class="form__group">
+                    <label class="form__label" for="plano">Selecione o Plano</label>
+                    <select class="form__input" id="plano" required>
+                        <option value="camisas-negras">Camisas Negras (R$ 19,98/mês)</option>
+                        <option value="caldeirao">Caldeirão Mais (R$ 49,98/mês)</option>
+                        <option value="dinamite">Gigante Dinamite (R$ 109,98/mês)</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn btn--primary">Assinar Agora</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- MODAL ÚNICO (Oculto) -->
+    <div class="modal" id="modal-idolo">
+        <div class="modal__content">
+            <span class="modal__close" id="close-modal">&times;</span>
+            <h2 class="modal__title" id="modal-nome">Nome</h2>
+            <p class="modal__text" id="modal-historia">História...</p>
+            <a href="#" target="_blank" class="modal__link" id="modal-wiki">Ver no Wikipedia</a>
+        </div>
+    </div>
+
+    <!-- Link para o JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
